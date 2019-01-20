@@ -1,0 +1,36 @@
+.red {
+	background-color: red;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.green {
+	background-color: green;
+}
+
+.svetoforr > div {
+	border-radius: 50px;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	opacity: 0.5;
+	transition: 1s;
+	animation: flash 1s alternate infinite;
+}
+.svetoforr {
+	width: 120px;
+	margin: auto;
+	border: 15px solid #ddd;
+	border-radius: 30px;
+}
+
+.svetoforr > div:hover {
+	opacity: 1;
+}
+
+@keyframes flash {
+	from{opacity: 0.5;}
+	to{opacity: 1;}
+}
